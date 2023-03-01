@@ -43,7 +43,7 @@ This tool helps setting up a local kubernetes cluster in a manageable and reprod
     `fatal: [node]: FAILED! => {"msg": "Missing sudo password"}` during the setup.
 3. Once the installation is complete, you will see the following output
     
-    <img src="https://i.imgur.com/XkzM36w.png"/>
+   <img src="https://i.imgur.com/XkzM36w.png"/>
 4. Now, to use commands like `kubectl`, you will need a kube config file. The config file will be located in the **`Master`** machine in `/etc/kubernetes/admin.conf`. Copy it to your local machine to access the cluster.
 5. After acquiring the config file to your local machine, edit the config file and
    change the IP address to **`Master`**'s public ip `server: https://${CONTROL_PLANE_IP}:6443`
